@@ -12,7 +12,7 @@ All datasets were from [Chicago](https://www.divvybikes.com/system-data), [New Y
 The original files were significantly larger and less organized. To simplify the analysis and evaluation process, some data cleaning was carried out, resulting in the condensation of these files into six columns.
 
 
-## The Datasets
+### The Datasets
 Data from the initial six months of 2017 has been randomly chosen and is available for all three cities. Each of these data files shares a common set of six (6) core columns:
 * Start Time (e.g., 2017-05-02 00:08:59)
 * End Time (e.g., 2017-06-07 00:22:45)
@@ -23,6 +23,13 @@ Data from the initial six months of 2017 has been randomly chosen and is availab
 The Chicago and New York City files also have the following two columns:
 * Gender
 * Birth Year
+
+
+### Prerequisities
+The Python 3 and these libraries were used for this project are:
+- panda  
+- NumPy
+- time
 
 
 ### Credits
