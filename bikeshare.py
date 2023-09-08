@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+
 CITY_DATA = { 'chicago': 'data/chicago.csv',
               'new york': 'data/new_york_city.csv',
               'washington': 'data/washington.csv' }
@@ -11,6 +12,7 @@ month_dict = {'All': 0, 'Jan': 1, 'Feb': 2, 'Mar': 3,
 
 day_dict = {'All': 0, 'Mon': 1, 'Tue': 2, 'Wed': 3, 
             'Thu': 4, 'Fri': 5, 'Sat': 6, 'Sun': 7}
+
 
 def convert(seconds):
     """
@@ -62,7 +64,8 @@ def convert(seconds):
     time_str = day_str + hrs_str + min_str +  sec_str
      
     return time_str
-    
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -253,6 +256,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % round((time.time() - start_time), 2))
     print('-'*40)
 
+
 def display_data(df, city):
     """
     Displays 5 rows of raw data of a city
@@ -276,6 +280,7 @@ def display_data(df, city):
         else:
             raw = input('Input valid. Please enter only \'yes\' or \'no\'')
 
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -293,6 +298,7 @@ def main():
             
         if restart.lower() != 'yes':
             break
+
 
 if __name__ == "__main__":
 	main()
