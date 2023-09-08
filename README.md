@@ -1,9 +1,6 @@
-
-### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+# Explore US Bike Share Data
+By: S. D. Boadi
+Created on: September 2023
 
 ### Description
 Describe what your project is about and what it does
