@@ -1,5 +1,5 @@
 # Explore US Bike Share Data
-By: S. D. Boadi
+By: S. D. Boadi<br>
 Created on: September 2023
 
 
