@@ -21,16 +21,21 @@ def convert(seconds):
     Returns:
         (str) time_str - days, hours, minutes and seconds
     """
+    # calculate the days
     days = int(seconds // (24 * 3600))
     
+    # calculate the hours
     t = seconds % (24 * 3600)
     hours = int(t // 3600)
 
+    # calculate the minutes
     t %= 3600
     minutes = int(t // 60)
 
+    # calculate the seconds
     seconds = int(t % 60)
     
+    # string whether day or days
     if days == 0:
         day_str = ''
     elif days == 1:
@@ -38,6 +43,7 @@ def convert(seconds):
     elif days > 1:
         day_str = str(days) + ' ' + 'days '
     
+    # string whether hour or hours
     if hours == 0:
         hrs_str = ''
     elif hours == 1:
@@ -45,13 +51,15 @@ def convert(seconds):
     elif hours > 1:
         hrs_str = str(hours) + ' ' + 'hours '
     
+    # string whether minute or minutes
     if minutes == 0:
         min_str = ''
     elif minutes == 1:
         min_str = str(minutes) + ' ' + 'minute '
     elif minutes > 1:
         min_str = str(minutes) + ' ' + 'minutes '
-        
+
+    # string whether second or seconds    
     if seconds == 0:
         sec_str = ''
     elif seconds == 1:
