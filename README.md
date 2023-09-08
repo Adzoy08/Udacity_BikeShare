@@ -13,5 +13,6 @@ The original files were significantly larger and less organized. To simplify the
 Include the files used
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Grateful to [Udacity](https://www.udacity.com/) for providing all the necessary resources and instruction to complete the project.
 
+Thanks to [Motivate](https://www.motivateco.com/) for making their data available for this project.
