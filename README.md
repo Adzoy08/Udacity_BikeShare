@@ -25,6 +25,27 @@ The Chicago and New York City files also have the following two columns:
 * Birth Year
 
 
+## Statistics Computed 
+**Popular times of travel**
+* most common month
+* most common day of week
+* most common hour of day
+
+**Popular stations and trip**
+* most common start station
+* most common end station
+* most common trip from start to end (i.e., most frequent combination of start station and end station)
+
+**Trip duration**
+* total travel time
+* average travel time
+
+**User info**
+* counts of each user type
+* counts of each gender (only available for NYC and Chicago)
+* earliest, most recent, most common year of birth (only available for NYC and Chicago)
+
+
 ### Prerequisities
 The Python 3 and these libraries were used for this project are:
 - panda  
