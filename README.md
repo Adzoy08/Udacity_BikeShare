@@ -25,7 +25,7 @@ The Chicago and New York City files also have the following two columns:
 * Birth Year
 
 
-## Statistics Computed 
+### Statistics Computed 
 **Popular times of travel**
 * most common month
 * most common day of week
