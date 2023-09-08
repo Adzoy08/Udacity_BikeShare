@@ -12,6 +12,19 @@ All datasets were from [Chicago](https://www.divvybikes.com/system-data), [New Y
 The original files were significantly larger and less organized. To simplify the analysis and evaluation process, some data cleaning was carried out, resulting in the condensation of these files into six columns.
 
 
+## The Datasets
+Data from the initial six months of 2017 has been randomly chosen and is available for all three cities. Each of these data files shares a common set of six (6) core columns:
+* Start Time (e.g., 2017-05-02 00:08:59)
+* End Time (e.g., 2017-06-07 00:22:45)
+* Trip Duration (in seconds - e.g., 856)
+* Start Station (e.g., Clark St & Randolph St)
+* End Station (e.g., Desplaines St & Jackson Blvd)
+* User Type (Subscriber or Customer)
+The Chicago and New York City files also have the following two columns:
+* Gender
+* Birth Year
+
+
 ### Credits
 Grateful to [Udacity](https://www.udacity.com/) for providing all the necessary resources and instruction to complete the project.
 
