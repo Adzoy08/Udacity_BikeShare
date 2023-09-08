@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+
 CITY_DATA = { 'chicago': 'data/chicago.csv',
               'new york': 'data/new_york_city.csv',
               'washington': 'data/washington.csv' }
@@ -11,6 +12,7 @@ month_dict = {'All': 0, 'Jan': 1, 'Feb': 2, 'Mar': 3,
 
 day_dict = {'All': 0, 'Mon': 1, 'Tue': 2, 'Wed': 3, 
             'Thu': 4, 'Fri': 5, 'Sat': 6, 'Sun': 7}
+
 
 def convert(seconds):
     """
@@ -70,7 +72,8 @@ def convert(seconds):
     time_str = day_str + hrs_str + min_str +  sec_str
      
     return time_str
-    
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -81,12 +84,12 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+    
     # get user input for city (chicago, new york city, washington). 
     city = ''
     city_list = ['Chicago', 'New York', 'Washington']
     while city.title() not in city_list:
-        city = input("Would you like to see data for Chicago, New York or Washington? \nPlease enter the city name\n").title()
-        
+        city = input("Would you like to see data for Chicago, New York or Washington? \nPlease enter the city name\n").title()    
 
     # get user input for month (all, january, february, ... , june)
     month = ''
@@ -261,6 +264,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % round((time.time() - start_time), 2))
     print('-'*40)
 
+
 def display_data(df, city):
     """
     Displays 5 rows of raw data of a city
@@ -273,6 +277,7 @@ def display_data(df, city):
     """
     i = 0
     raw = input("Would you like to see the raw data for {}? Enter yes or no.\n" .format(city.title())).lower()
+    
     while True:
         if raw == 'no':
             break
@@ -282,6 +287,7 @@ def display_data(df, city):
             i += 5
         else:
             raw = input('Input valid. Please enter only \'yes\' or \'no\'')
+
 
 def main():
     while True:
@@ -300,6 +306,7 @@ def main():
             
         if restart.lower() != 'yes':
             break
+
 
 if __name__ == "__main__":
 	main()
