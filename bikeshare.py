@@ -265,6 +265,7 @@ def display_data(df, city):
     """
     i = 0
     raw = input("Would you like to see the raw data for {}? Enter yes or no.\n" .format(city.title())).lower()
+    
     while True:
         if raw == 'no':
             break
